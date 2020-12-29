@@ -42,9 +42,8 @@ let reset = (_:Dom.event) : unit => {
       document.getElementById("result").innerHTML = "";
     }()
   |}];
-  /* rightNow; */
   reset_focus(); 
-  Js.log("called reset 4");
+  Js.log("called reset");
 };
 
 let copyButton = Doc.getElementById("bcopy", D.document);
@@ -57,7 +56,6 @@ let copyToClipboard = (_:Dom.event) : unit => {
     }catch (err) {console.log('Oops, unable to copy');}document.body.removeChild(textArea);    
     }()
   |}];
-  /* rightNow; */
   reset_focus(); 
   Js.log("called copyToClipboard");
 };
